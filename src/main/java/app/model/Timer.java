@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Timer {
 
-    private Long nanoTime = System.nanoTime();
+    private static final Long NANO_TIME = System.nanoTime();
 
     public Long getTime() {
-        return nanoTime;
+        return NANO_TIME;
     }
 }
